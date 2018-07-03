@@ -4,6 +4,10 @@ $color__toolbar-background: 	#1034A6;
 $color__toolbar-text: 	#fff;
 
 mat-toolbar {
+    width: 100%;
     background-color: $color__toolbar-background;
     color: $color__toolbar-text;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
