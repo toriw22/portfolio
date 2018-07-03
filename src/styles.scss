@@ -1,0 +1,9 @@
+//============== COLORS ================//
+
+$color__toolbar-background: 	#1034A6;
+$color__toolbar-text: 	#fff;
+
+mat-toolbar {
+    background-color: $color__toolbar-background;
+    color: $color__toolbar-text;
+}
