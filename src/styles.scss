@@ -1,13 +1,52 @@
+@import '~@angular/material/theming';
+
 //============== COLORS ================//
 
-$color__toolbar-background: 	#1034A6;
-$color__toolbar-text: 	#fff;
+$color__toolbar-border: 	    #1034A6;
+$color__toolbar-background: 	#fff;
+$color__toolbar-text:           #404040;
+$color__card-background:        #fff;
 
-mat-toolbar {
-    width: 100%;
-    background-color: $color__toolbar-background;
-    color: $color__toolbar-text;
-    display: flex;
-    align-items: center;
-    text-align: center;
+
+body {
+    margin: 0;
+    font-family: "Quattrocento Sans", Helvetica, sans-serif;
+    background-position: fixed;
+    background-image: url("assets/images/light-blue-brushed-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    mat-toolbar {
+        min-height: 35px;
+        max-height: 35px;
+        min-width: 100%;
+        max-width: 100%;
+        background-color: $color__toolbar-background;
+        color: $color__toolbar-text;
+        opacity: 0.75;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &.main-nav-bar {
+            border-bottom: 0.5px solid $color__toolbar-border;
+            h4 {
+                margin: 0;
+            }
+        }
+        &.main-footer {
+            position: fixed;
+            bottom: 0px;
+            border-top: 0.5px solid $color__toolbar-border;
+        }
+    }
+    .main-container {
+        margin-top: 20px;
+        width: 75%;
+        background-color: $color__card-background;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.75;
+        border: 0.5px solid $color__toolbar-border;
+    }
 }
+
+
