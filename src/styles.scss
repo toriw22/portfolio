@@ -2,19 +2,22 @@
 
 //============== COLORS ================//
 
-$color__toolbar-border: 	    #1034A6;
+$color__toolbar-border: 	    #990000;
 $color__toolbar-background: 	#fff;
 $color__toolbar-text:           #404040;
 $color__card-background:        #fff;
+$color__page-background:        #D6F1F0;
 
 
 body {
     margin: 0;
     font-family: "Quattrocento Sans", Helvetica, sans-serif;
-    background-position: fixed;
-    background-image: url("assets/images/light-blue-brushed-background.jpg");
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-image: url("assets/images/mandala-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 342px 375px;
+    background-color: $color__page-background;
     mat-toolbar {
         min-height: 35px;
         max-height: 35px;
