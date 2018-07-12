@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutMeComponent } from './components/main/about-me/about-me.component';
-import { ContactComponent } from './components/main/contact/contact.component';
-import { PortfolioComponent } from './components/main/portfolio/portfolio.component';
-import { MainComponent } from './components/main/main.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+
 
 
 const appRoutes: Routes = [
