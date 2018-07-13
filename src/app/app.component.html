@@ -7,10 +7,16 @@
 
   </head>
   <body>
-
-    <app-nav-bar></app-nav-bar>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <div fxLayout="column"> 
+      <app-nav-bar></app-nav-bar>
+      <div class="row"> 
+        <div class="mandala-container" (click)="rotate()" routerLink="/about-me" fxLayoutAlign="center center">
+          <img class="mandala-img" [@rotatedState]='state' src="../../../assets/images/mandala-bg-dark.png" >
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </div>
 
   </body>
 </html>

@@ -44,6 +44,8 @@ body {
     .home-container {
         margin-top: 20px;
         background-color: $color__card-background;
+        position: absolute;
+        top: 0;
         .home-header {
             h2 { 
                 font-size: 60px;
@@ -61,23 +63,22 @@ body {
         }
         &.left-aligned {
             margin-left: 60px;
+            left: 0;
         }
         &.right-aligned {
             margin-right: 60px;
+            right: 0;
         }
     }
-    .mandala {
+    .mandala-container {
+        border: 0 !important;
         .mandala-img {
             height: 640px;
             width: 640px;
         }
     }
     .about-me-container {
-        background-image: url("assets/images/mandala-bg-dark.png");
-        background-position: top left;
-        height: 2500px;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+        background-color: $color__card-background;
     }
 }
 
