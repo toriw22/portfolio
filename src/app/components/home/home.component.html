@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="end start"> 
-    <div class="home-container left-aligned" fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" [@displayState]='state' >
+    <div class="home-container left-aligned" fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" >
       <div class="home-header">
         <h2 >
           Tori Rojas
@@ -14,10 +14,9 @@
         </p>
       </div>
     </div>
-    <div class="mandala" (click)="rotate()" routerLink="/about-me" fxFlex="60%" >
+    <div class="mandala" (click)="rotate()" fxFlex="60%" >
       <img class="mandala-img" [@rotatedState]='state' src="../../../assets/images/mandala-bg-dark.png" >
     </div>
-    <router-outlet></router-outlet>
     <div class="home-container right-aligned" fxLayout="column" fxLayoutAlign="start end" fxFlex="20%">
       <div class="home-header" fxLayout="column">
         <h2 fxLayoutAlign="start end" >
