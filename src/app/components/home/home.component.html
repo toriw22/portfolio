@@ -1,0 +1,34 @@
+<div fxLayout="row" fxLayoutAlign="end start"> 
+    <div class="home-container left-aligned" fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" [@displayState]='state' >
+      <div class="home-header">
+        <h2 >
+          Tori Rojas
+        </h2>
+        <h4>
+          Web Developer
+        </h4>
+      </div>
+      <div class="home-content">
+        <p>
+          Hello. My Name is Tori Rojas.
+        </p>
+      </div>
+    </div>
+    <div class="mandala" (click)="rotate()" routerLink="/about-me" fxFlex="60%" >
+      <img class="mandala-img" [@rotatedState]='state' src="../../../assets/images/mandala-bg-dark.png" >
+    </div>
+    <router-outlet></router-outlet>
+    <div class="home-container right-aligned" fxLayout="column" fxLayoutAlign="start end" fxFlex="20%">
+      <div class="home-header" fxLayout="column">
+        <h2 fxLayoutAlign="start end" >
+          Portfolio
+        </h2>
+        <h2 fxLayoutAlign="start end" (click)="hideLeft()" >
+          About Me
+        </h2>
+        <h2 fxLayoutAlign="start end" >
+          Contact
+        </h2>
+    </div>
+  </div>
+  

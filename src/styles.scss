@@ -2,12 +2,12 @@
 
 //============== COLORS ================//
 
-$color__toolbar-border: 	    #990000;
-$color__toolbar-background: 	#fff;
+$color__toolbar-border: 	    transparent;
+$color__toolbar-background: 	transparent;
 $color__toolbar-text:           #404040;
-$color__card-background:        #fff;
-$color__page-background:        #D6F1F0;
-
+$color__card-background:        transparent;
+$color__page-background:        #ebf9ff;
+// #ebf9ff;
 a{
     cursor: pointer;
     padding: 0px 10px;
@@ -15,12 +15,8 @@ a{
 
 body {
     margin: 0;
-    font-family: "Quattrocento Sans", Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-attachment: fixed;
-    background-position: right bottom;
-    background-image: url("assets/images/mandala-bg.png");
-    background-repeat: no-repeat;
-    background-size: 342px 375px;
     background-color: $color__page-background;
     mat-toolbar {
         min-height: 35px;
@@ -45,14 +41,36 @@ body {
             border-top: 0.5px solid $color__toolbar-border;
         }
     }
-    .main-container {
+    .home-container {
         margin-top: 20px;
-        width: 75%;
         background-color: $color__card-background;
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 0.75;
-        border: 0.5px solid $color__toolbar-border;
+        .home-header {
+            h2 { 
+                font-size: 60px;
+                margin-top: 0;
+            }
+            h4 {
+                font-size: 30px;
+            }
+
+        }
+        .home-content {
+            p {
+                font-size: 24px;
+            }
+        }
+        &.left-aligned {
+            margin-left: 60px;
+        }
+        &.right-aligned {
+            margin-right: 60px;
+        }
+    }
+    .mandala {
+        .mandala-img {
+            height: 640px;
+            width: 640px;
+        }
     }
 }
 

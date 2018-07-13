@@ -1,9 +1,6 @@
 <mat-toolbar class="main-nav-bar" fxLayout="row">
-  <div class="nav-left" fxLayoutAlign="start center" fxFlex="50%">   
-    <h4 routerLink="/about-me">Tori Rojas</h4>
-  </div>
-  <div class="nav-right" fxLayoutAlign="end center" fxFlex="50%">
-    <a routerLink="/about-me">About Me</a> | 
+  <div class="nav-right" fxLayoutAlign="end center" fxFlex="100%">
+    <a routerLink="/about-me" (click)="hideLeft()" >About Me</a> | 
     <a routerLink="/portfolio">Portfolio</a> | 
     <a routerLink="/contact">Contact</a>
   </div>

@@ -9,6 +9,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { AppRoutingModule } from './/app-routing.module';
     FooterComponent,
     AboutMeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
     FlexLayoutModule,
-    AppRoutingModule 
+    AppRoutingModule,
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
