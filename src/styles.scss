@@ -6,9 +6,9 @@ $color__toolbar-border: 	    transparent;
 $color__toolbar-background: 	transparent;
 $color__toolbar-text:           #404040;
 $color__card-background:        transparent;
-$color__page-background:        #ebf9ff;
+$color__page-background:        #800020;
 // #ebf9ff;
-a{
+a.routerLink {
     cursor: pointer;
     padding: 0px 10px;
 }
@@ -16,8 +16,8 @@ a{
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background-image: url("/assets/images/concrete.png");
     background-attachment: fixed;
-    background-color: $color__page-background;
     mat-toolbar {
         min-height: 35px;
         max-height: 35px;

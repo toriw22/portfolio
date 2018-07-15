@@ -10,22 +10,12 @@
     </div>
     <div class="home-content">
       <p>
-        Hello. My Name is Tori Rojas.
+        {{ title }}
       </p>
     </div>
   </div>
 
   <div class="home-container right-aligned" fxLayout="column" fxLayoutAlign="end end" fxFlex="20%">
-    <div class="home-header" fxLayout="column">
-      <h2 fxLayoutAlign="start end" >
-        Portfolio
-      </h2>
-      <h2 fxLayoutAlign="start end" (click)="hideLeft()" >
-        About Me
-      </h2>
-      <h2 fxLayoutAlign="start end" >
-        Contact
-      </h2>
-  </div>
+    <router-outlet></router-outlet>
 </div>
   

@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { AboutMeComponent } from './components/pages/about-me/about-me.component';
+import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
