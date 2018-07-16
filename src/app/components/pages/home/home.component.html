@@ -1,7 +1,7 @@
 <div fxLayout="row" fxLayoutAlign="end start"> 
   <div class="home-container left-aligned" fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" >
-    <div class="home-header">
-      <h2 >
+    <div class="home-header" *ngIf="default">
+      <h2 (click)="rotate()">
         Tori Rojas
       </h2>
       <h4>
@@ -10,7 +10,7 @@
     </div>
     <div class="home-content">
       <p>
-        {{ title }}
+        blah blah blah
       </p>
     </div>
   </div>
