@@ -19,6 +19,7 @@ body {
     font-family: 'Raleway', sans-serif;
     background-image: url("/assets/images/concrete.png");
     background-attachment: fixed;
+    height: 100vh;
     mat-toolbar {
         min-height: 35px;
         max-height: 35px;
@@ -78,7 +79,7 @@ body {
             width: 640px;
         }
     }
-    .main-container {
+    .content {
         background-color: $color__card-background;
         position: absolute;
         top: 30px;
