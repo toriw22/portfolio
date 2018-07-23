@@ -10,6 +10,5 @@ import { Component, OnInit } from '@angular/core';
 export class AboutMeComponent {
   title = "About Me";
 
-  default = false;
-
+  
 }

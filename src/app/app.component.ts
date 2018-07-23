@@ -21,7 +21,7 @@ export class AppComponent {
 
   
   rotate() {
-    this.state = (this.state === 'default' ? 'turnOut' : 'default' );
+    this.state = (this.state === 'default' ? 'turnOut' : 'turnOut' );
   }
 
 }

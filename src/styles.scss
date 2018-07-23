@@ -77,8 +77,11 @@ body {
             width: 640px;
         }
     }
-    .about-me-container {
+    .main-container {
         background-color: $color__card-background;
+        position: absolute;
+        top: 30px;
+        left: 45%;
     }
 }
 
