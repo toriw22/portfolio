@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, state, query, style, animate, transition, group, animateChild } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +17,14 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class AppComponent {
-  state: string = "default";
 
   
   rotate() {
     this.state = (this.state === 'default' ? 'turnOut' : 'turnOut' );
+  }
+
+  reset() {
+    this.state = (this.state === 'turnOut' ? 'default' : 'default' );
   }
 
 }

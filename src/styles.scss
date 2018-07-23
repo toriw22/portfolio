@@ -1,9 +1,10 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~@angular/material/theming';
 
 //============== COLORS ================//
 
 $color__toolbar-border: 	    transparent;
-$color__toolbar-background: 	transparent;
+$color__toolbar-background: 	transparent !important;
 $color__toolbar-text:           #404040;
 $color__card-background:        transparent;
 $color__page-background:        #800020;
@@ -81,7 +82,8 @@ body {
         background-color: $color__card-background;
         position: absolute;
         top: 30px;
-        left: 45%;
+        left: 35%;
+        width: 45%;
     }
 }
 

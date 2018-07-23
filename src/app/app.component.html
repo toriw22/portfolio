@@ -13,9 +13,9 @@
         <div class="mandala-container" fxLayoutAlign="center center">
           <img class="mandala-img" [@rotatedState]='state' src="../../../assets/images/mandala-bg-dark.png" >
         </div>
-        <router-outlet></router-outlet>
+          <router-outlet></router-outlet>
       </div>
-      <app-footer></app-footer>
+      <app-footer routerLink="/home" (click)="reset()"></app-footer>
     </div>
 
   </body>
