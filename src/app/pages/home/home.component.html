@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="end start"> 
-  <div class="home-container left-aligned" fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" >
-    <div class="home-header" *ngIf="default">
+  <div class="home-container left-aligned" [@hiddenState]='state' fxLayout="column" fxLayoutAlign="start start" fxFlex="20%" >
+    <div class="home-header">
       <h2 >
         Tori Rojas
       </h2>
@@ -14,8 +14,6 @@
       </p>
     </div>
   </div>
-
-  <div class="home-container right-aligned" fxLayout="column" fxLayoutAlign="end end" fxFlex="20%">
 
 </div>
   

@@ -8,9 +8,9 @@
   </head>
   <body>
     <div fxLayout="column"> 
-      <app-nav-bar (click)="rotate()"></app-nav-bar>
+      <app-nav-bar (click)="$event.stopPropagation(); rotate()"></app-nav-bar>
       <div class="row"> 
-        <div class="mandala-container" fxLayoutAlign="center center">
+        <div class="mandala-container" fxLayoutAlign="center center" (click)="tooMuchSpin()">
           <img class="mandala-img" [@rotatedState]='state' src="../../../assets/images/mandala-bg-dark.png" >
         </div>
           <router-outlet></router-outlet>

@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   
-  title = "Portfolio";
+  show: boolean = false;
+  
+  title: string = "Portfolio";
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

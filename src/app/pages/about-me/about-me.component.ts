@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AboutMeComponent {
-  title = "About Me";
+  title: string = "About Me";
 
+  show: boolean = false;
   
 }

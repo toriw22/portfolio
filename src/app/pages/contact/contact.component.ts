@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  title = "Contact";
+  show: boolean = false;
+  
+  title: string = "Contact";
   
   constructor() { }
 
